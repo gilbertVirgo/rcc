@@ -1,0 +1,13 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "nav";
+@import "hamburgers";
+
+body {
+    font-family: "Alata", sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
