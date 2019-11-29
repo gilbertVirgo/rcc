@@ -1,5 +1,7 @@
 export default function Location() {
-    return <div>
-            <p>We are here</p>
+    return (
+    <div>
+            <img src="/assets/mapIcon.png" alt="map icon"/>
         </div>
+    );
 }

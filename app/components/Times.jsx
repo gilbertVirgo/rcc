@@ -1,10 +1,15 @@
 export default function Times() {
     
-    return <div>
-        <p>Our opening times</p>
+    return (
+    <div>
         <div>
-            <p>Monday time to time</p>
-            <p>Tuesday time to time</p>
+            <img src="/assets/clock.png" alt="this is a clock"/>
+            <p>Service Times</p>
+        </div>
+        <div>
+            <p>Sundays: 10:30am</p>
+            <p>Wednesdays: 7pm</p>
         </div>
     </div>
+    );
 }
