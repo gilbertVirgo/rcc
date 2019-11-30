@@ -1,30 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { getBreakpoints } from "../functions";
+import React from "react";
+import Button from "./Button";
 
 const Item = ({ children }: { children: string }) => (
     <p className="item">{children}</p>
 )
 
 const Nav = () => {
-    const [bp, setBp] = useState(getBreakpoints(window.innerWidth));
-    const [active, setActive] = useState(false);
-
-    useEffect(() => {
-        const resize = () => setBp(getBreakpoints(window.innerWidth));
-
-        window.addEventListener("resize", resize);
-        return () => window.removeEventListener("resize", resize);
-    }, []);
+    const [active, setActive] = React.useState(false);
 
     return (
         <div className="nav">
             <div className="bar">
                 <img
                     className="logo"
-                    src={require("../assets/logo.webp")} />
+                    src="/assets/logo.png" />
                 <div className={`items ${active ? "active" : ""}`}>
                     <Item>About</Item>
                     <Item>Contact</Item>
+                    <Button outline variant="orange" style={{ marginLeft: "25px" }}>
+                        Get in touch
+                    </Button>
                 </div>
                 <button
                     className={"hamburger hamburger--squeeze " + (active ? "is-active" : "")}

@@ -1,0 +1,59 @@
+$xs: 300px;
+$sm: 600px;
+$md: 900px;
+$lg: 1200px;
+$xl: 1500px;
+
+$light: rgb(243, 243, 243);
+$purple: rgb(160,17,130);
+$blue: rgb(25, 157, 220);
+$orange: rgb(253, 141, 37);
+$dark: rgb(32, 32, 32);
+
+[data-variant="light"] {
+    background-color: $light;
+    color: $dark;
+}
+[data-variant="purple"] {
+    background-color: $purple;
+    color: $light;
+}
+[data-variant="blue"] {
+    background-color: $blue;
+    color: $light;
+}
+[data-variant="orange"] {
+    background-color: $orange;
+    color: $light;
+}
+[data-variant="dark"] {
+    background-color: $dark;
+    color: $light;
+}
+
+.outline {
+    border-style: solid !important;
+    border-width: 2px !important;
+    background-color: transparent;
+
+    &[data-variant="light"] {
+        border-color: $light;
+        color: $light !important;
+    }
+    &[data-variant="purple"] {
+        border-color: $purple;
+        color: $purple !important;
+    }
+    &[data-variant="blue"] {
+        border-color: $blue;
+        color: $blue !important;
+    }
+    &[data-variant="orange"] {
+        border-color: $orange;
+        color: $orange !important;
+    }
+    &[data-variant="dark"] {
+        border-color: $dark;
+        color: $dark !important;
+    }
+}

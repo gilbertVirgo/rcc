@@ -1,8 +1,10 @@
-import React from "react";
+import "../public/style/main.scss";
+
+import Nav from "../components/Nav";
 
 const Index = () => {
     return (
-        <p>Welcome to this new app</p>
+        <Nav />
     )
 }
 
