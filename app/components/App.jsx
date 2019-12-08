@@ -4,6 +4,7 @@ import Times from "./Times.jsx"
 import Location from "./Location.jsx"
 import Buttons from "./Buttons.jsx"
 import NavOuter from "./NavOuter.jsx"
+import "../customs/app.scss"
 const App = () => {
     return (
     <div>

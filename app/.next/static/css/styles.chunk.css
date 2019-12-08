@@ -1,0 +1,11 @@
+.NavOuter {
+  display: none; }
+
+#navCheck {
+  display: none; }
+
+#navCheck:checked + .NavOuter {
+  display: block; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

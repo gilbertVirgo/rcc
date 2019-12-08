@@ -1,10 +1,22 @@
+import Link from "next/link"
 export default function NavInner() {
+    function clicked() {
+        return(
+        console.log("passed")
+        );
+    };
+
     return (
     <div>
         <div>
             <nav>
                 <img src="/assets/logo.png" alt="this is a logo"/>
-                <img src="/assets/navIcon.png" alt="this is the nav icon"/>
+                
+                    <input type="checkbox" id = "navCheck"/>
+                    <label htmlFor= "navCheck">
+                    <img src="/assets/navIcon.png" alt="this is the nav icon" />
+                    </label>
+                    
             </nav>
         </div>
         <div>
@@ -14,4 +26,4 @@ export default function NavInner() {
     </div>
     );
 
-}
+};

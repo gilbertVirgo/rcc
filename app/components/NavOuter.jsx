@@ -1,7 +1,7 @@
 import AboutOuter from "./AboutOuter.jsx"
 export default function NavOuter() {
     return(
-        <div>
+        <div className = "NavOuter">
             <div>
                 <button>Contact Us</button>
             </div>
