@@ -1,10 +1,11 @@
-import Link from "next/link"
+import { useState } from "react";
+
 export default function NavInner() {
-    function clicked() {
-        return(
-        console.log("passed")
-        );
-    };
+    const [on, setOn] = useState(false);
+    function tooggle(){
+        setOn(!on);
+        console.log(on);
+    }
 
     return (
     <div>
@@ -12,10 +13,9 @@ export default function NavInner() {
             <nav>
                 <img src="/assets/logo.png" alt="this is a logo"/>
                 
-                    <input type="checkbox" id = "navCheck"/>
-                    <label htmlFor= "navCheck">
+                    <button onClick = {tooggle}>
                     <img src="/assets/navIcon.png" alt="this is the nav icon" />
-                    </label>
+                    </button>
                     
             </nav>
         </div>
