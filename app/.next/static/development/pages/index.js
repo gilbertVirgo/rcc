@@ -254,27 +254,35 @@ function NavInner() {
       on = _useState[0],
       setOn = _useState[1];
 
-  function tooggle() {
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("none"),
+      display = _useState2[0],
+      setDisplay = _useState2[1];
+
+  var typeD;
+
+  function toggle() {
     setOn(!on);
-    console.log(on);
+    typeD = on ? "none" : "block";
+    setDisplay(typeD);
+    console.log(on, display);
   }
 
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 15
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 16
     },
     __self: this
   }, __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -282,14 +290,14 @@ function NavInner() {
     alt: "this is a logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
   }), __jsx("button", {
-    onClick: tooggle,
+    onClick: toggle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     },
     __self: this
   }, __jsx("img", {
@@ -297,25 +305,25 @@ function NavInner() {
     alt: "this is the nav icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
   })))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 26
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 27
     },
     __self: this
   }, "Ridley Community Church"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 28
     },
     __self: this
   }, "An Evangelical Church in Forest Gate")));

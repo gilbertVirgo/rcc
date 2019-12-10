@@ -2,9 +2,13 @@ import { useState } from "react";
 
 export default function NavInner() {
     const [on, setOn] = useState(false);
-    function tooggle(){
+    const [display, setDisplay] = useState("none");
+    let typeD;
+    function toggle(){
         setOn(!on);
-        console.log(on);
+        typeD = (on) ? "none" : "block";
+        setDisplay(typeD);
+        console.log(on, display);
     }
 
     return (
@@ -13,7 +17,7 @@ export default function NavInner() {
             <nav>
                 <img src="/assets/logo.png" alt="this is a logo"/>
                 
-                    <button onClick = {tooggle}>
+                    <button onClick = {toggle}>
                     <img src="/assets/navIcon.png" alt="this is the nav icon" />
                     </button>
                     
