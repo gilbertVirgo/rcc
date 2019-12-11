@@ -108,32 +108,41 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\components\\AboutOuter.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-function AboutOuter() {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, "Our Pastor"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "What We Belive")));
+
+class AboutOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return __jsx("div", {
+      style: this.props,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 9
+      },
+      __self: this
+    }, __jsx("ul", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, "Our Pastor"), __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, "What We Belive")));
+  }
+
 }
 ;
 
@@ -155,13 +164,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Times_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Times.jsx */ "./components/Times.jsx");
 /* harmony import */ var _Location_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Location.jsx */ "./components/Location.jsx");
 /* harmony import */ var _Buttons_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Buttons.jsx */ "./components/Buttons.jsx");
-/* harmony import */ var _NavOuter_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./NavOuter.jsx */ "./components/NavOuter.jsx");
-/* harmony import */ var _customs_app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../customs/app.scss */ "./customs/app.scss");
-/* harmony import */ var _customs_app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_customs_app_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _customs_app_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../customs/app.scss */ "./customs/app.scss");
+/* harmony import */ var _customs_app_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_customs_app_scss__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\components\\App.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -173,43 +180,37 @@ const App = () => {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  }, __jsx(_NavInner_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 10
-    },
-    __self: undefined
-  }, __jsx(_NavOuter_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: undefined
-  }), __jsx(_NavInner_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
     },
     __self: undefined
   }), __jsx(_Introduction_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 11
     },
     __self: undefined
   }), __jsx(_Buttons_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 12
     },
     __self: undefined
   }), __jsx(_Times_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 13
     },
     __self: undefined
   }), __jsx(_Location_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 14
     },
     __self: undefined
   }));
@@ -338,88 +339,104 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavInner; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _NavOuter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavOuter */ "./components/NavOuter.jsx");
 var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\components\\NavInner.jsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function NavInner() {
-  const {
-    0: on,
-    1: setOn
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
-    0: display,
-    1: setDisplay
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("none");
-  let typeD;
 
-  function toggle() {
-    setOn(!on);
-    typeD = on ? "none" : "block";
-    setDisplay(typeD);
-    console.log(on, display);
+class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      light: true,
+      display: "none"
+    };
   }
 
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, __jsx("nav", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, __jsx("img", {
-    src: "/assets/logo.png",
-    alt: "this is a logo",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), __jsx("button", {
-    onClick: toggle,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, __jsx("img", {
-    src: "/assets/navIcon.png",
-    alt: "this is the nav icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  })))), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "Ridley Community Church"), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, "An Evangelical Church in Forest Gate")));
+  updateDsiplay() {
+    let D = this.state.light === true ? "block" : "none";
+    this.setState({
+      display: D
+    });
+  }
+
+  render() {
+    return __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx(_NavOuter__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      display: this.state.display,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("nav", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/assets/logo.png",
+      alt: "this is a logo",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }), __jsx("button", {
+      onClick: () => {
+        this.setState({
+          light: !this.state.light
+        });
+        this.updateDsiplay();
+        console.log(this.state.display, this.state.light);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("img", {
+      src: "/assets/navIcon.png",
+      alt: "this is the nav icon",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    })))), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, "Ridley Community Church"), __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 35
+      },
+      __self: this
+    }, "An Evangelical Church in Forest Gate")));
+  }
+
 }
 ;
 
@@ -442,85 +459,119 @@ var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\comp
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function NavOuter() {
-  return __jsx("div", {
-    className: "NavOuter",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("button", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "Contact Us")), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "HOME"), __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  })), __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "ABOUT US"), __jsx("img", {
-    src: "/assets/arrowAbout.png",
-    alt: "this is an arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), __jsx(_AboutOuter_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }))));
+
+class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAboutActive: true,
+      display: "none"
+    };
+  }
+
+  toggleAbout() {
+    this.setState({
+      isAboutActive: !this.state.isAboutActive
+    });
+    let D = this.state.isAboutActive ? "block" : "none";
+    this.setState({
+      display: D
+    });
+  }
+
+  render() {
+    return __jsx("div", {
+      className: "NavOuter",
+      style: this.props,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, __jsx("button", {
+      onClick: () => console.log(this.props),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      },
+      __self: this
+    }, "Contact Us")), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "HOME"), __jsx("hr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    })), __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, __jsx("a", {
+      onClick: () => {
+        this.toggleAbout();
+        console.log(this.state.isAboutActive, this.state.display);
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, __jsx("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "ABOUT US")), __jsx("img", {
+      src: "/assets/arrowAbout.png",
+      alt: "this is an arrow",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }), __jsx("hr", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }), __jsx(_AboutOuter_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      display: this.state.display,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31
+      },
+      __self: this
+    }))));
+  }
+
 }
-;
 
 /***/ }),
 
