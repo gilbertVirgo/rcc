@@ -8,7 +8,7 @@ export default class NavInner extends Component{
             display : "none"
         }
     }
-    updateDsiplay(){
+    updateDisplay(){
         let D = (this.state.light === true) ? "block" : "none";
         this.setState({display: D});
     }
@@ -17,17 +17,15 @@ export default class NavInner extends Component{
         <div>
             <NavOuter display = {this.state.display}></NavOuter>
             <div>
-                <nav>
+                <nav className = "navContainer">
                     <img src="/assets/logo.png" alt="this is a logo"/>
-                    
-                        <button onClick = {
-                            () => {this.setState({light : !this.state.light});
-                            this.updateDsiplay();
-                            console.log(this.state.display,this.state.light);
-                            }}>
+                    <button onClick = {
+                        () => {this.setState({light : !this.state.light});
+                        this.updateDisplay();
+                        console.log(this.state.display,this.state.light);
+                        }}>
                         <img src="/assets/navIcon.png" alt="this is the nav icon" />
-                        </button>
-                        
+                    </button>
                 </nav>
             </div>
             <div>

@@ -305,8 +305,8 @@ function (_Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NavInner, [{
-    key: "updateDsiplay",
-    value: function updateDsiplay() {
+    key: "updateDisplay",
+    value: function updateDisplay() {
       var D = this.state.light === true ? "block" : "none";
       this.setState({
         display: D
@@ -337,6 +337,7 @@ function (_Component) {
         },
         __self: this
       }, __jsx("nav", {
+        className: "navContainer",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 20
@@ -356,13 +357,13 @@ function (_Component) {
             light: !_this2.state.light
           });
 
-          _this2.updateDsiplay();
+          _this2.updateDisplay();
 
           console.log(_this2.state.display, _this2.state.light);
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       }, __jsx("img", {
@@ -370,25 +371,25 @@ function (_Component) {
         alt: "this is the nav icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 27
         },
         __self: this
       })))), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 31
         },
         __self: this
       }, __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 32
         },
         __self: this
       }, "Ridley Community Church"), __jsx("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 33
         },
         __self: this
       }, "An Evangelical Church in Forest Gate")));

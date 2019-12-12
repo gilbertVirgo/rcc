@@ -1,10 +1,21 @@
-// .NavOuter{
-//     display: none;
-// }
-// #navCheck{
-//     display: none;
-// }
-// #navCheck:checked {
-//     + .NavOuter{
-//     display: block;
-// }}
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: lightblue;
+      .NavOuter{
+          position: absolute;
+          z-index: 1;
+          background-color: whitesmoke;
+      }
+      .navContainer{
+          display: flex;
+          justify-content: space-between;
+          button{
+              background: none;
+              border: none;
+          }
+          button:focus{
+              outline: none;
+          }
+      }
+    }
+  }
