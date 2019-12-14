@@ -15,7 +15,7 @@ export default class NavInner extends Component{
     render(){
         return(
         <div>
-            <NavOuter display = {this.state.display}></NavOuter>
+    <NavOuter display = {this.state.display}></NavOuter>
             <div>
                 <nav className = "navContainer">
                     <img src="/assets/logo.png" alt="this is a logo"/>
@@ -28,9 +28,11 @@ export default class NavInner extends Component{
                     </button>
                 </nav>
             </div>
-            <div>
-                <p>Ridley Community Church</p>
-                <p>An Evangelical Church in Forest Gate</p>
+            <div className = "navTContainer">
+                <div className = "navText">
+                    <p style = {{fontSize : "20px", marginBottom: "5px"}}>Ridley Community Church</p>
+                    <p style = {{fontSize : "10px", marginTop: "5px"}}>An Evangelical Church in Forest Gate</p>
+                </div>
             </div>
         </div>
         )

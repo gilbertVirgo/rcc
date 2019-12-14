@@ -1,18 +1,52 @@
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: lightblue; }
-    body .NavOuter {
-      position: absolute;
-      z-index: 1;
-      background-color: whitesmoke; }
-    body .navContainer {
+  * {
+    color: #707070;
+    font-family: 'Source Sans Pro', sans-serif; }
+  body .timesContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px; }
+    body .timesContainer .clockContainer {
       display: flex;
-      justify-content: space-between; }
-      body .navContainer button {
-        background: none;
-        border: none; }
-      body .navContainer button:focus {
-        outline: none; } }
+      justify-content: space-evenly; }
+      body .timesContainer .clockContainer img {
+        display: inline-block;
+        padding-top: 5px; }
+  body .NavOuter {
+    position: absolute;
+    z-index: 1;
+    background-color: whitesmoke; }
+  body .btnContainer {
+    display: flex;
+    justify-content: space-evenly; }
+    body .btnContainer .locateBtn {
+      appearance: none;
+      background-color: #009BDE;
+      border: none;
+      padding: 20px;
+      border-radius: 27px;
+      color: white;
+      width: 148px; }
+    body .btnContainer .locateBtn:focus {
+      outline: none; }
+  body .navTContainer {
+    display: flex;
+    justify-content: center; }
+    body .navTContainer .navText {
+      display: inline-block; }
+  body .navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    padding-bottom: 5px; }
+    body .navContainer button {
+      background: none;
+      border: none; }
+    body .navContainer button:focus {
+      outline: none; } }
+
+.inline-block {
+  display: inline-block; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

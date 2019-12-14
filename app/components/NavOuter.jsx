@@ -15,9 +15,9 @@ export default class NavOuter extends Component {
     }
     render(){
         return(
-            <div className = "NavOuter" style = {this.props}>
+            <div className = "NavOuter" style = {{display: this.props.display}}>
                 <div>
-                    <button onClick = {() => console.log(this.props)}>Contact Us</button>
+                    <button onClick = {() => {console.log(this.props);}}>Contact Us</button>
                 </div>
                 <div>
                     <div>

@@ -237,18 +237,21 @@ var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\comp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function Buttons() {
   return __jsx("div", {
+    className: "btnContainer",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
   }, __jsx("button", {
+    className: "locateBtn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, "Come to a Service"), __jsx("button", {
+    className: "locateBtn",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -276,12 +279,22 @@ var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\comp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function Introduction() {
   return __jsx("div", {
+    style: {
+      display: "flex",
+      justifyContent: "space-evenly"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, __jsx("p", {
+    style: {
+      fontSize: "15px",
+      textAlign: "center",
+      width: "180px",
+      padding: "63px"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -309,6 +322,10 @@ var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\comp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function Location() {
   return __jsx("div", {
+    style: {
+      display: "flex",
+      justifyContent: "space-evenly"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
@@ -418,24 +435,40 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     })))), __jsx("div", {
+      className: "navTContainer",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
       },
       __self: this
-    }, __jsx("p", {
+    }, __jsx("div", {
+      className: "navText",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 32
       },
       __self: this
-    }, "Ridley Community Church"), __jsx("p", {
+    }, __jsx("p", {
+      style: {
+        fontSize: "20px",
+        marginBottom: "5px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 33
       },
       __self: this
-    }, "An Evangelical Church in Forest Gate")));
+    }, "Ridley Community Church"), __jsx("p", {
+      style: {
+        fontSize: "10px",
+        marginTop: "5px"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, "An Evangelical Church in Forest Gate"))));
   }
 
 }
@@ -483,7 +516,9 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     return __jsx("div", {
       className: "NavOuter",
-      style: this.props,
+      style: {
+        display: this.props.display
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -496,7 +531,9 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx("button", {
-      onClick: () => console.log(this.props),
+      onClick: () => {
+        console.log(this.props);
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20
@@ -593,15 +630,24 @@ var _jsxFileName = "C:\\Users\\Tanbir\\Documents\\coding\\Chapel\\rcc\\app\\comp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 function Times() {
   return __jsx("div", {
+    className: "timesContainer",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, __jsx("div", {
+    className: "inline-block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "clockContainer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
     },
     __self: this
   }, __jsx("img", {
@@ -609,31 +655,41 @@ function Times() {
     alt: "this is a clock",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, "Service Times")), __jsx("div", {
+  })), __jsx("p", {
+    style: {
+      fontSize: "13px"
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "Sundays: 10:30am"), __jsx("p", {
+  }, "Service Times")), __jsx("div", {
+    className: "inline-block",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
+    },
+    __self: this
+  }, __jsx("p", {
+    style: {
+      fontSize: "13px"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "Sundays: 10:30am"), __jsx("p", {
+    style: {
+      fontSize: "13px"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
     },
     __self: this
   }, "Wednesdays: 7pm")));
