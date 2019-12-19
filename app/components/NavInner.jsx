@@ -15,11 +15,11 @@ export default class NavInner extends Component{
     render(){
         return(
         <div>
-    <NavOuter display = {this.state.display}></NavOuter>
+            <NavOuter display = {this.state.display}></NavOuter>
             <div>
                 <nav className = "navContainer">
                     <img src="/assets/logo.png" alt="this is a logo"/>
-                    <button onClick = {
+                    <button className = "navBtn" onClick = {
                         () => {this.setState({light : !this.state.light});
                         this.updateDisplay();
                         console.log(this.state.display,this.state.light);

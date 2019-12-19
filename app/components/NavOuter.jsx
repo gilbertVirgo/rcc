@@ -17,7 +17,7 @@ export default class NavOuter extends Component {
         return(
             <div className = "NavOuter" style = {{display: this.props.display}}>
                 <div>
-                    <button onClick = {() => {console.log(this.props);}}>Contact Us</button>
+                    <button className = "contactBtn" onClick = {() => {console.log(this.props);}}>Contact Us</button>
                 </div>
                 <div>
                     <div>
@@ -25,7 +25,7 @@ export default class NavOuter extends Component {
                         <hr/>
                     </div>
                     <div>
-                        <a onClick = {() => {this.toggleAbout();console.log(this.state.isAboutActive,this.state.display)}}><p>ABOUT US</p></a>
+                        <a onClick = {() => {this.toggleAbout();console.log(this.state)}}><p>ABOUT US</p></a>
                         <img src="/assets/arrowAbout.png" alt="this is an arrow"/>
                         <hr/>
                         <AboutOuter display = {this.state.display}></AboutOuter>

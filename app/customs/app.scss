@@ -20,7 +20,14 @@
         .NavOuter{
             position: absolute;
             z-index: 1;
+            height: 100%;
+            width: 65%;
             background-color: whitesmoke;
+            .contactBtn{
+                float: right;
+                background-color: whitesmoke;
+                border: none;
+            }
         }
         .btnContainer{
             display: flex;
@@ -50,9 +57,10 @@
             justify-content: space-between;
             padding: 35px;
             padding-bottom: 5px;
-            button{
+            .navBtn{
                 background: none;
                 border: none;
+                z-index: 2;
           }
           button:focus{
               outline: none;
