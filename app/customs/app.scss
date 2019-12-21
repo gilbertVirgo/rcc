@@ -23,6 +23,8 @@
             height: 100%;
             width: 65%;
             background-color: whitesmoke;
+            top: 0px;
+            left: 0px;
             .contactBtn{
                 float: right;
                 background-color: whitesmoke;
@@ -52,19 +54,23 @@
                 display: inline-block;
             }
         }
-        .navContainer{
-            display: flex;
-            justify-content: space-between;
-            padding: 35px;
-            padding-bottom: 5px;
-            .navBtn{
-                background: none;
-                border: none;
-                z-index: 2;
-          }
-          button:focus{
-              outline: none;
-          }
+        .navInner{
+            transition-property: transform;
+            transition-duration: 0.4s;
+            .navContainer{
+                display: flex;
+                justify-content: space-between;
+                padding: 35px;
+                padding-bottom: 5px;
+                .navBtn{
+                    background: none;
+                    border: none;
+                    z-index: 2;
+                }
+                button:focus{
+                    outline: none;
+                }
+            }
         }
     }
   }

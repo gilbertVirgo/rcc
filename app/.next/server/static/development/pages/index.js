@@ -406,42 +406,49 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     super(props);
     this.state = {
       light: true,
-      display: "none"
+      display: "none",
+      transform: "translate(-200px,0px)"
     };
   }
 
   updateDisplay() {
     let D = this.state.light === true ? "block" : "none";
+    let T = this.state.light ? "translate(0px,0px)" : "translate(-200px,0px)";
     this.setState({
       display: D
+    });
+    this.setState({
+      transform: T
     });
   }
 
   render() {
     return __jsx("div", {
+      className: "navInner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 21
       },
       __self: this
     }, __jsx(_NavOuter__WEBPACK_IMPORTED_MODULE_1__["default"], {
       display: this.state.display,
+      transform: this.state.transform,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 22
       },
       __self: this
     }), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 23
       },
       __self: this
     }, __jsx("nav", {
       className: "navContainer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 24
       },
       __self: this
     }, __jsx("img", {
@@ -449,7 +456,7 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       alt: "this is a logo",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 25
       },
       __self: this
     }), __jsx("button", {
@@ -463,7 +470,7 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 26
       },
       __self: this
     }, __jsx("img", {
@@ -471,21 +478,21 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       alt: "this is the nav icon",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 31
       },
       __self: this
     })))), __jsx("div", {
       className: "navTContainer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 35
       },
       __self: this
     }, __jsx("div", {
       className: "navText",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 36
       },
       __self: this
     }, __jsx("p", {
@@ -495,7 +502,7 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 37
       },
       __self: this
     }, "Ridley Community Church"), __jsx("p", {
@@ -505,7 +512,7 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 38
       },
       __self: this
     }, "An Evangelical Church in Forest Gate"))));
@@ -557,7 +564,8 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     return __jsx("div", {
       className: "NavOuter",
       style: {
-        display: this.props.display
+        display: this.props.display,
+        transform: this.props.transform
       },
       __source: {
         fileName: _jsxFileName,
@@ -567,7 +575,7 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 22
       },
       __self: this
     }, __jsx("button", {
@@ -577,37 +585,37 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 23
       },
       __self: this
     }, "Contact Us")), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 25
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 26
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 27
       },
       __self: this
     }, "HOME"), __jsx("hr", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 28
       },
       __self: this
     })), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 30
       },
       __self: this
     }, __jsx("a", {
@@ -617,13 +625,13 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 31
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 31
       },
       __self: this
     }, "ABOUT US")), __jsx("img", {
@@ -631,20 +639,20 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       alt: "this is an arrow",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 32
       },
       __self: this
     }), __jsx("hr", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 33
       },
       __self: this
     }), __jsx(_AboutOuter_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
       display: this.state.display,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 34
       },
       __self: this
     }))));

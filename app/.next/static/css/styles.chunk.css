@@ -17,7 +17,9 @@
     z-index: 1;
     height: 100%;
     width: 65%;
-    background-color: whitesmoke; }
+    background-color: whitesmoke;
+    top: 0px;
+    left: 0px; }
     body .NavOuter .contactBtn {
       float: right;
       background-color: whitesmoke;
@@ -40,17 +42,20 @@
     justify-content: center; }
     body .navTContainer .navText {
       display: inline-block; }
-  body .navContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px;
-    padding-bottom: 5px; }
-    body .navContainer .navBtn {
-      background: none;
-      border: none;
-      z-index: 2; }
-    body .navContainer button:focus {
-      outline: none; } }
+  body .navInner {
+    transition-property: transform;
+    transition-duration: 0.4s; }
+    body .navInner .navContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px;
+      padding-bottom: 5px; }
+      body .navInner .navContainer .navBtn {
+        background: none;
+        border: none;
+        z-index: 2; }
+      body .navInner .navContainer button:focus {
+        outline: none; } }
 
 .inline-block {
   display: inline-block; }

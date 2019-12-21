@@ -5,7 +5,7 @@ export default class NavOuter extends Component {
         super(props);
         this.state = {
             isAboutActive : true,
-            display : "none"
+            display : "none",
         }
     }
     toggleAbout(){
@@ -15,7 +15,10 @@ export default class NavOuter extends Component {
     }
     render(){
         return(
-            <div className = "NavOuter" style = {{display: this.props.display}}>
+            <div className = "NavOuter" style = {{
+                display: this.props.display,
+                transform: this.props.transform,
+                }}>
                 <div>
                     <button className = "contactBtn" onClick = {() => {console.log(this.props);}}>Contact Us</button>
                 </div>
