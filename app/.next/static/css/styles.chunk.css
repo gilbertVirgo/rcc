@@ -19,11 +19,15 @@
     width: 65%;
     background-color: whitesmoke;
     top: 0px;
-    left: 0px; }
+    left: 0px;
+    transition-property: all;
+    transition-duration: 1s; }
     body .NavOuter .contactBtn {
       float: right;
       background-color: whitesmoke;
       border: none; }
+  body .NavOuter:hover {
+    transform: translate(50px, 0px); }
   body .btnContainer {
     display: flex;
     justify-content: space-evenly; }
@@ -42,20 +46,17 @@
     justify-content: center; }
     body .navTContainer .navText {
       display: inline-block; }
-  body .navInner {
-    transition-property: transform;
-    transition-duration: 0.4s; }
-    body .navInner .navContainer {
-      display: flex;
-      justify-content: space-between;
-      padding: 35px;
-      padding-bottom: 5px; }
-      body .navInner .navContainer .navBtn {
-        background: none;
-        border: none;
-        z-index: 2; }
-      body .navInner .navContainer button:focus {
-        outline: none; } }
+  body .navInner .navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    padding-bottom: 5px; }
+    body .navInner .navContainer .navBtn {
+      background: none;
+      border: none;
+      z-index: 2; }
+    body .navInner .navContainer button:focus {
+      outline: none; } }
 
 .inline-block {
   display: inline-block; }

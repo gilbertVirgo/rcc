@@ -6,20 +6,20 @@ export default class NavInner extends Component{
         this.state = {
             light : true,
             display : "none",
-            transform : "translate(-200px,0px)"
+            transform : "translate(-300px,0px)"
 
         }
     }
     updateDisplay(){
         let D = (this.state.light === true) ? "block" : "none";
-        let T = (this.state.light) ? "translate(0px,0px)" : "translate(-200px,0px)";
+        let T = (this.state.light) ? "translate(0px,0px)" : "translate(-300px,0px)";
         this.setState({display: D});
         this.setState({transform : T});
     }
     render(){
         return(
         <div className = "navInner">
-            <NavOuter display = {this.state.display} transform = {this.state.transform}></NavOuter>
+            <NavOuter transform = {this.state.transform}></NavOuter>
             <div>
                 <nav className = "navContainer">
                     <img src="/assets/logo.png" alt="this is a logo"/>

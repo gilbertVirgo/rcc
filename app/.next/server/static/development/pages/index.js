@@ -407,13 +407,13 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     this.state = {
       light: true,
       display: "none",
-      transform: "translate(-200px,0px)"
+      transform: "translate(-300px,0px)"
     };
   }
 
   updateDisplay() {
     let D = this.state.light === true ? "block" : "none";
-    let T = this.state.light ? "translate(0px,0px)" : "translate(-200px,0px)";
+    let T = this.state.light ? "translate(0px,0px)" : "translate(-300px,0px)";
     this.setState({
       display: D
     });
@@ -431,7 +431,6 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx(_NavOuter__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      display: this.state.display,
       transform: this.state.transform,
       __source: {
         fileName: _jsxFileName,

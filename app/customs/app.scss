@@ -25,11 +25,16 @@
             background-color: whitesmoke;
             top: 0px;
             left: 0px;
+            transition-property: all;
+            transition-duration: 1s;
             .contactBtn{
                 float: right;
                 background-color: whitesmoke;
                 border: none;
             }
+        }
+        .NavOuter:hover{
+            transform: translate(50px,0px);
         }
         .btnContainer{
             display: flex;
@@ -55,8 +60,6 @@
             }
         }
         .navInner{
-            transition-property: transform;
-            transition-duration: 0.4s;
             .navContainer{
                 display: flex;
                 justify-content: space-between;
