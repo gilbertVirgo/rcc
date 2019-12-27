@@ -6,19 +6,23 @@ export default class NavInner extends Component{
         this.state = {
             light : true,
             display : "none",
-            transform : "translate(-300px,0px)"
-
+            transform : "translate(-300px,0px)",
+            opacity : 0.5
         }
     }
     updateDisplay(){
-        let D = (this.state.light === true) ? "block" : "none";
+        let D = (this.state.light) ? "block" : "none";
         let T = (this.state.light) ? "translate(0px,0px)" : "translate(-300px,0px)";
+        let O = (this.state.light) ? "1" : "0.5";
+        this.setState({opacity : O});
         this.setState({display: D});
         this.setState({transform : T});
+        console.log(this.state.opacity);
     }
     render(){
         return(
         <div className = "navInner">
+            <div className = "opacityContainer" style = {{opacity : this.state.opacity}}></div>
             <NavOuter transform = {this.state.transform}></NavOuter>
             <div>
                 <nav className = "navContainer">

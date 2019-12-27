@@ -12,22 +12,6 @@
       body .timesContainer .clockContainer img {
         display: inline-block;
         padding-top: 5px; }
-  body .NavOuter {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 65%;
-    background-color: whitesmoke;
-    top: 0px;
-    left: 0px;
-    transition-property: all;
-    transition-duration: 1s; }
-    body .NavOuter .contactBtn {
-      float: right;
-      background-color: whitesmoke;
-      border: none; }
-  body .NavOuter:hover {
-    transform: translate(50px, 0px); }
   body .btnContainer {
     display: flex;
     justify-content: space-evenly; }
@@ -46,6 +30,31 @@
     justify-content: center; }
     body .navTContainer .navText {
       display: inline-block; }
+  body .navInner .opacityContainer {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    transition-property: opacity;
+    transition-duration: 0.6s; }
+  body .navInner .NavOuter {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 65%;
+    background-color: whitesmoke;
+    top: 0px;
+    left: 0px;
+    transition-property: all;
+    transition-duration: 1s; }
+    body .navInner .NavOuter .contactBtn {
+      float: right;
+      background-color: whitesmoke;
+      border: none; }
+  body .navInner .NavOuter:hover {
+    transform: translate(50px, 0px); }
   body .navInner .navContainer {
     display: flex;
     justify-content: space-between;
@@ -56,10 +65,9 @@
       border: none;
       z-index: 2; }
     body .navInner .navContainer button:focus {
-      outline: none; } }
-
-.inline-block {
-  display: inline-block; }
+      outline: none; }
+  .inline-block {
+    display: inline-block; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

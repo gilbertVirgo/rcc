@@ -43,7 +43,8 @@ function (_Component) {
     _this.state = {
       light: true,
       display: "none",
-      transform: "translate(-300px,0px)"
+      transform: "translate(-300px,0px)",
+      opacity: 0.5
     };
     return _this;
   }
@@ -51,14 +52,19 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(NavInner, [{
     key: "updateDisplay",
     value: function updateDisplay() {
-      var D = this.state.light === true ? "block" : "none";
+      var D = this.state.light ? "block" : "none";
       var T = this.state.light ? "translate(0px,0px)" : "translate(-300px,0px)";
+      var O = this.state.light ? "1" : "0.5";
+      this.setState({
+        opacity: O
+      });
       this.setState({
         display: D
       });
       this.setState({
         transform: T
       });
+      console.log(this.state.opacity);
     }
   }, {
     key: "render",
@@ -69,27 +75,37 @@ function (_Component) {
         className: "navInner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 24
         },
         __self: this
-      }, __jsx(_NavOuter__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, __jsx("div", {
+        className: "opacityContainer",
+        style: {
+          opacity: this.state.opacity
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }), __jsx(_NavOuter__WEBPACK_IMPORTED_MODULE_6__["default"], {
         transform: this.state.transform,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 26
         },
         __self: this
       }), __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 27
         },
         __self: this
       }, __jsx("nav", {
         className: "navContainer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 28
         },
         __self: this
       }, __jsx("img", {
@@ -97,7 +113,7 @@ function (_Component) {
         alt: "this is a logo",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 29
         },
         __self: this
       }), __jsx("button", {
@@ -113,7 +129,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 30
         },
         __self: this
       }, __jsx("img", {
@@ -121,21 +137,21 @@ function (_Component) {
         alt: "this is the nav icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 35
         },
         __self: this
       })))), __jsx("div", {
         className: "navTContainer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 39
         },
         __self: this
       }, __jsx("div", {
         className: "navText",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 40
         },
         __self: this
       }, __jsx("p", {
@@ -145,7 +161,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 41
         },
         __self: this
       }, "Ridley Community Church"), __jsx("p", {
@@ -155,7 +171,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       }, "An Evangelical Church in Forest Gate"))));
@@ -171,4 +187,4 @@ function (_Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.b73a0bbccab462985794.hot-update.js.map
+//# sourceMappingURL=index.js.15652aa18a71d0b7d455.hot-update.js.map

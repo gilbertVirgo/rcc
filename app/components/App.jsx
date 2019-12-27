@@ -1,12 +1,11 @@
 import NavInner from "./NavInner.jsx"
 import "../customs/app.scss"
 import MainBody from "./MainBody.jsx"
-const App = () => {
+export default function App()  {
     return (
-    <div>
-        <NavInner></NavInner>
-        <MainBody></MainBody>
-    </div>
-        );
-}
-export default App;
+        <div className = "highestContainer">
+            <NavInner ></NavInner>
+            <MainBody></MainBody>
+        </div>
+            );
+    }

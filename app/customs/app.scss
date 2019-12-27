@@ -17,25 +17,6 @@
                 }
             }
         }
-        .NavOuter{
-            position: absolute;
-            z-index: 1;
-            height: 100%;
-            width: 65%;
-            background-color: whitesmoke;
-            top: 0px;
-            left: 0px;
-            transition-property: all;
-            transition-duration: 1s;
-            .contactBtn{
-                float: right;
-                background-color: whitesmoke;
-                border: none;
-            }
-        }
-        .NavOuter:hover{
-            transform: translate(50px,0px);
-        }
         .btnContainer{
             display: flex;
             justify-content: space-evenly;
@@ -60,6 +41,35 @@
             }
         }
         .navInner{
+            .opacityContainer{
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                transition-property: opacity;
+                transition-duration: 0.6s;
+            }
+            .NavOuter{
+                position: absolute;
+                z-index: 2;
+                height: 100%;
+                width: 65%;
+                background-color: whitesmoke;
+                top: 0px;
+                left: 0px;
+                transition-property: all;
+                transition-duration: 1s;
+                .contactBtn{
+                    float: right;
+                    background-color: whitesmoke;
+                    border: none;
+                }
+            }
+            .NavOuter:hover{
+                transform: translate(50px,0px);
+            }
             .navContainer{
                 display: flex;
                 justify-content: space-between;
@@ -76,7 +86,8 @@
             }
         }
     }
-  }
+
   .inline-block{
     display: inline-block;
   }
+}
