@@ -1,9 +1,7 @@
 @media only screen and (max-width: 400px) {
-    * {
+    body {
         color: #707070;
         font-family: 'Source Sans Pro', sans-serif;
-    }
-    body {
         .timesContainer{
             display: flex;
             justify-content: space-between;
@@ -27,7 +25,7 @@
                 padding: 20px;
                 border-radius: 27px;
                 color: white;
-                width: 148px;
+                width: 150px
             }
             .locateBtn:focus {
                 outline: none;
@@ -49,22 +47,36 @@
                 top: 0px;
                 left: 0px;
                 transition-property: opacity;
-                transition-duration: 0.6s;
+                transition-duration: 0.9s;
+                background-color: white;
             }
             .NavOuter{
+                color: white;
                 position: absolute;
                 z-index: 2;
                 height: 100%;
                 width: 65%;
-                background-color: whitesmoke;
+                background-color: #262626;
                 top: 0px;
                 left: 0px;
                 transition-property: all;
                 transition-duration: 1s;
-                .contactBtn{
-                    float: right;
-                    background-color: whitesmoke;
-                    border: none;
+                    .contactBtn{
+                        background-color: white;
+                        border: none;
+                        margin: 10px;
+                        padding: 10px;
+                        border-radius: 21px;
+                        width: 107px;
+                    }
+                .aboutContainer{
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        height: 12px;
+                        width: 28px;
+                        margin: 20px;
+                    }
                 }
             }
             .NavOuter:hover{

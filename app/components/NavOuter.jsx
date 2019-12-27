@@ -19,20 +19,18 @@ export default class NavOuter extends Component {
                 display: this.props.display,
                 transform: this.props.transform,
                 }}>
-                <div>
+                <div className = ".contactContainer" style = {{display : "flex", justifyContent : "flex-end"}}>
                     <button className = "contactBtn" onClick = {() => {console.log(this.props);}}>Contact Us</button>
                 </div>
-                <div>
+                <div style = {{marginLeft : "40px"}}>
                     <div>
-                        <p>HOME</p>
-                        <hr/>
+                        <p style = {{marginTop : "0px"}}>HOME</p>
                     </div>
-                    <div>
-                        <a onClick = {() => {this.toggleAbout();console.log(this.state)}}><p>ABOUT US</p></a>
-                        <img src="/assets/arrowAbout.png" alt="this is an arrow"/>
-                        <hr/>
-                        <AboutOuter display = {this.state.display}></AboutOuter>
-                    </div>
+                <div className = "aboutContainer">
+                    <a onClick = {() => {this.toggleAbout();console.log(this.state)}}><p className = "inline-block">ABOUT</p></a>
+                    <img src="/assets/arrowAbout.png" alt="this is an arrow" className = "arrowAbout"/>
+                    <AboutOuter display = {this.state.display}></AboutOuter>
+                </div>
                 </div>
             </div>
         )

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -407,14 +407,14 @@ class NavInner extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       light: true,
       display: "none",
       transform: "translate(-300px,0px)",
-      opacity: 0.5
+      opacity: 0
     };
   }
 
   updateDisplay() {
     let D = this.state.light ? "block" : "none";
     let T = this.state.light ? "translate(0px,0px)" : "translate(-300px,0px)";
-    let O = this.state.light ? "1" : "0.5";
+    let O = this.state.light ? "0.5" : "0";
     this.setState({
       opacity: O
     });
@@ -587,6 +587,11 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx("div", {
+      className: ".contactContainer",
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
@@ -603,6 +608,9 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, "Contact Us")), __jsx("div", {
+      style: {
+        marginLeft: "40px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 25
@@ -615,21 +623,19 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __self: this
     }, __jsx("p", {
+      style: {
+        marginTop: "0px"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27
       },
       __self: this
-    }, "HOME"), __jsx("hr", {
+    }, "HOME")), __jsx("div", {
+      className: "aboutContainer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
-      },
-      __self: this
-    })), __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 29
       },
       __self: this
     }, __jsx("a", {
@@ -639,34 +645,30 @@ class NavOuter extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 30
       },
       __self: this
     }, __jsx("p", {
+      className: "inline-block",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
+      },
+      __self: this
+    }, "ABOUT")), __jsx("img", {
+      src: "/assets/arrowAbout.png",
+      alt: "this is an arrow",
+      className: "arrowAbout",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 31
-      },
-      __self: this
-    }, "ABOUT US")), __jsx("img", {
-      src: "/assets/arrowAbout.png",
-      alt: "this is an arrow",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32
-      },
-      __self: this
-    }), __jsx("hr", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 33
       },
       __self: this
     }), __jsx(_AboutOuter_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
       display: this.state.display,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 32
       },
       __self: this
     }))));
@@ -800,7 +802,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/

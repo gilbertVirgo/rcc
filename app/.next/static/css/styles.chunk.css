@@ -1,71 +1,83 @@
 @media only screen and (max-width: 400px) {
-  * {
+  body {
     color: #707070;
     font-family: 'Source Sans Pro', sans-serif; }
-  body .timesContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px; }
-    body .timesContainer .clockContainer {
+    body .timesContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px; }
+      body .timesContainer .clockContainer {
+        display: flex;
+        justify-content: space-evenly; }
+        body .timesContainer .clockContainer img {
+          display: inline-block;
+          padding-top: 5px; }
+    body .btnContainer {
       display: flex;
       justify-content: space-evenly; }
-      body .timesContainer .clockContainer img {
-        display: inline-block;
-        padding-top: 5px; }
-  body .btnContainer {
-    display: flex;
-    justify-content: space-evenly; }
-    body .btnContainer .locateBtn {
-      appearance: none;
-      background-color: #009BDE;
-      border: none;
-      padding: 20px;
-      border-radius: 27px;
+      body .btnContainer .locateBtn {
+        appearance: none;
+        background-color: #009BDE;
+        border: none;
+        padding: 20px;
+        border-radius: 27px;
+        color: white;
+        width: 150px; }
+      body .btnContainer .locateBtn:focus {
+        outline: none; }
+    body .navTContainer {
+      display: flex;
+      justify-content: center; }
+      body .navTContainer .navText {
+        display: inline-block; }
+    body .navInner .opacityContainer {
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      transition-property: opacity;
+      transition-duration: 0.9s;
+      background-color: white; }
+    body .navInner .NavOuter {
       color: white;
-      width: 148px; }
-    body .btnContainer .locateBtn:focus {
-      outline: none; }
-  body .navTContainer {
-    display: flex;
-    justify-content: center; }
-    body .navTContainer .navText {
-      display: inline-block; }
-  body .navInner .opacityContainer {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    transition-property: opacity;
-    transition-duration: 0.6s; }
-  body .navInner .NavOuter {
-    position: absolute;
-    z-index: 2;
-    height: 100%;
-    width: 65%;
-    background-color: whitesmoke;
-    top: 0px;
-    left: 0px;
-    transition-property: all;
-    transition-duration: 1s; }
-    body .navInner .NavOuter .contactBtn {
-      float: right;
-      background-color: whitesmoke;
-      border: none; }
-  body .navInner .NavOuter:hover {
-    transform: translate(50px, 0px); }
-  body .navInner .navContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px;
-    padding-bottom: 5px; }
-    body .navInner .navContainer .navBtn {
-      background: none;
-      border: none;
-      z-index: 2; }
-    body .navInner .navContainer button:focus {
-      outline: none; }
+      position: absolute;
+      z-index: 2;
+      height: 100%;
+      width: 65%;
+      background-color: #262626;
+      top: 0px;
+      left: 0px;
+      transition-property: all;
+      transition-duration: 1s; }
+      body .navInner .NavOuter .contactBtn {
+        background-color: white;
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 21px;
+        width: 107px; }
+      body .navInner .NavOuter .aboutContainer {
+        display: flex;
+        justify-content: space-between; }
+        body .navInner .NavOuter .aboutContainer img {
+          height: 12px;
+          width: 28px;
+          margin: 20px; }
+    body .navInner .NavOuter:hover {
+      transform: translate(50px, 0px); }
+    body .navInner .navContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px;
+      padding-bottom: 5px; }
+      body .navInner .navContainer .navBtn {
+        background: none;
+        border: none;
+        z-index: 2; }
+      body .navInner .navContainer button:focus {
+        outline: none; }
   .inline-block {
     display: inline-block; } }
 

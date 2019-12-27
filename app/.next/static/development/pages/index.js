@@ -383,7 +383,7 @@ function (_Component) {
       light: true,
       display: "none",
       transform: "translate(-300px,0px)",
-      opacity: 0.5
+      opacity: 0
     };
     return _this;
   }
@@ -393,7 +393,7 @@ function (_Component) {
     value: function updateDisplay() {
       var D = this.state.light ? "block" : "none";
       var T = this.state.light ? "translate(0px,0px)" : "translate(-300px,0px)";
-      var O = this.state.light ? "1" : "0.5";
+      var O = this.state.light ? "0.5" : "0";
       this.setState({
         opacity: O
       });
@@ -600,6 +600,11 @@ function (_Component) {
         },
         __self: this
       }, __jsx("div", {
+        className: ".contactContainer",
+        style: {
+          display: "flex",
+          justifyContent: "flex-end"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
@@ -616,6 +621,9 @@ function (_Component) {
         },
         __self: this
       }, "Contact Us")), __jsx("div", {
+        style: {
+          marginLeft: "40px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
@@ -628,21 +636,19 @@ function (_Component) {
         },
         __self: this
       }, __jsx("p", {
+        style: {
+          marginTop: "0px"
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
-      }, "HOME"), __jsx("hr", {
+      }, "HOME")), __jsx("div", {
+        className: "aboutContainer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
-        },
-        __self: this
-      })), __jsx("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 29
         },
         __self: this
       }, __jsx("a", {
@@ -653,34 +659,30 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         },
         __self: this
       }, __jsx("p", {
+        className: "inline-block",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, "ABOUT")), __jsx("img", {
+        src: "/assets/arrowAbout.png",
+        alt: "this is an arrow",
+        className: "arrowAbout",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
-        },
-        __self: this
-      }, "ABOUT US")), __jsx("img", {
-        src: "/assets/arrowAbout.png",
-        alt: "this is an arrow",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }), __jsx("hr", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
         },
         __self: this
       }), __jsx(_AboutOuter_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
         display: this.state.display,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 32
         },
         __self: this
       }))));
@@ -2940,7 +2942,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CTanbir%5CDocuments%5Ccoding%5CChapel%5Crcc%5Capp%5Cpages%5Cindex.jsx ***!
   \****************************************************************************************************************************************************/
@@ -2963,5 +2965,5 @@ module.exports = dll_ce55a549e3439867a796;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

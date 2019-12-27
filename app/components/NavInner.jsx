@@ -7,13 +7,13 @@ export default class NavInner extends Component{
             light : true,
             display : "none",
             transform : "translate(-300px,0px)",
-            opacity : 0.5
+            opacity : 0
         }
     }
     updateDisplay(){
         let D = (this.state.light) ? "block" : "none";
         let T = (this.state.light) ? "translate(0px,0px)" : "translate(-300px,0px)";
-        let O = (this.state.light) ? "1" : "0.5";
+        let O = (this.state.light) ? "0.5" : "0";
         this.setState({opacity : O});
         this.setState({display: D});
         this.setState({transform : T});
